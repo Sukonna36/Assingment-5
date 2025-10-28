@@ -54,6 +54,9 @@
 
 <!-- header section -->
 <header id="header-parent" class="flex bg-[#41FF6B1A] min-h-[1000px] max-w-[1900px]">
+
+
+  <!-- left header -->
   <div id="service-card-container" class="my-8 w-3/4 grid grid-cols-3 gap-4 my-8 ml-5 min-h-[900px]">
 
     <div class="bg-white service-card p-4 rounded-lg shadow">
@@ -323,12 +326,20 @@
 
 
 
+  <!-- right header -->
+   <div id="call-history-container" class="w-1/4 my-8 mr-5 ml-3 flex flex-col">
+  <div id="call-history" class="p-4 bg-white rounded-lg flex justify-between items-center ">
 
-  <div id="call-history" class="p-4 bg-white rounded-lg flex justify-between w-1/4 my-8 mr-5 ml-3">
     <h1><i class="fa-regular fa-clock text-[#5C5C5C] "></i><span class="font-bold ml-2">Call History</span></h1>
-    <button class="bg-[#00A63E] text-white btn btn-active btn-success w-20 h-9 rounded-full">Clear</button>
+    <button id="clear-history" class="bg-[#00A63E] text-white btn btn-active btn-success w-20 h-9 rounded-full">Clear</button>
   </div>
 
+    <div id="history-entries" class="flex flex-col gap-2 mt-2">
+      <!-- call history entries -->
+    </div>
+    
+    </div>
+  
 </header>
 
 
