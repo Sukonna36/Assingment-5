@@ -12,6 +12,8 @@ for(let i=0; i<hearts.length; i++){
 
 
 
+
+
 // call button
 
   let coins = 100;
@@ -35,7 +37,27 @@ for(let i=0; i<hearts.length; i++){
       
       alert("📞 Calling " + surviceName + " " + surviceNumber);
 
-      
+      })
+  }
+
+
+
+  // copy button
+  let copyCount = 0;
+  const copyNumber = document.getElementById('copy-count');
+  const copyButtons = document.querySelectorAll('.copy-btn')
+  copyButtons.forEach(btn=> {
+    btn.addEventListener('click', function(){
+      const card = this.closest('.service-card')
+      const number = card.querySelector('.survice-number').innerText;
+
+
+      navigator.clipboard.writeText(number).then(() => {
+        copyCount++
+        copyNumber.innerText = copyCount;
+        alert("Number Copied:" + number)
+      })
+    })
 
     })
-  }
+  
