@@ -11,6 +11,49 @@
 <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
 <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 
+<style>
+  @media (max-width: 768px) {
+    #nav-bar {
+      flex-direction: column;
+      min-width: 100%;
+      text-align: center;
+      gap: 10px;
+      padding: 10px 0;
+    }
+
+    #nav-left-div {
+      margin-left: 0;
+      justify-content: center;
+    }
+
+    #nav-right-div {
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-right: 0;
+    }
+
+    #Emergency-service-directory {
+      text-align: center;
+      padding: 20px;
+    }
+
+    #header-parent {
+      flex-direction: column;
+      min-height: auto;
+    }
+
+    #service-card-container {
+      width: 100%;
+      grid-template-columns: 1fr;
+      margin-left: 0;
+    }
+
+    #call-history-container {
+      width: 100%;
+      margin: 20px 0;
+    }
+  }
+</style>
 
 
 </head>
